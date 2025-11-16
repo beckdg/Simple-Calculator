@@ -27,4 +27,54 @@ body {
     height: 60px;
     font-size: 1.6rem;
     font-weight: 500;
+    width: 100%;
+    overflow-x: auto; /* horizontal scroll if too long */
+}
+
+/* Default theme = light */
+body.light {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+body.light .calculator {
+    background: white;
+    border: 1px solid #ddd;
+}
+
+body.light .btn {
+    background: white;
+    color: #212529;
+    border: 1px solid #ccc;
+}
+
+.history {
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #f1f3f5;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.history h4 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#historyList {
+    max-height: 200px;
+    overflow-y: auto;
+    padding-left: 0;
+}
+
+#historyList li {
+    list-style: none;
+    padding: 5px 10px;
+    border-bottom: 1px solid #ddd;
+    font-family: monospace;
+}
+
+#clearHistory {
+    float: right;
 }
